@@ -12,7 +12,7 @@ export class DisplayPhotoComponent implements OnInit {
   constructor(private showPhoto: ShowPhotoService) {}
 
   show = () => {
-    this.showPhoto.showPhoto().subscribe((image: any) => {
+    this.showPhoto.showPhoto().subscribe((image) => {
       this.imageUrl = image.urls.small;
     })
   }
